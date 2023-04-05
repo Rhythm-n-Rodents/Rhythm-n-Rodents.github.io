@@ -2,31 +2,30 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="google" content="notranslate" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="description" content="U-19 Rhythm-n-Rodents Simulations, analysis and code">
-    <meta name="author" content="Kleinfeld Lab @ UCSD">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google" content="notranslate" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="U-19 Rhythm-n-Rodents Simulations, analysis and code">
+  <meta name="author" content="Kleinfeld Lab @ UCSD">
 
-    <title>U-19 Rhythm-n-Rodents Simulations, analysis and code</title>
+  <title>U-19 Rhythm-n-Rodents Simulations, analysis and code</title>
 
-    <link href="vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css" rel="stylesheet">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-secondary">
-    <!-- Navigation -->
-    <nav class="overlay fragment navbar navbar-expand-lg py-2 scroll-spy bg-dark navbar-dark" id="nav"
-        role="navigation">
-        <div class="container">
-            <div class="navbar-collapse justify-content-end collapse show" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <!-- <li class="nav-item ">
+  <!-- Navigation -->
+  <nav class="overlay fragment navbar navbar-expand-lg py-2 scroll-spy bg-dark navbar-dark" id="nav" role="navigation">
+    <div class="container">
+      <div class="navbar-collapse justify-content-end collapse show" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <!-- <li class="nav-item ">
             <a class="nav-link" href="/projects/">
               Projects
             </a>
@@ -56,129 +55,141 @@
             </a>
 
           </li> -->
-                    <li class="nav-item ">
-                        <a class="nav-link" href="/software/">
-                            Software
-                        </a>
+          <li class="nav-item ">
+            <a class="nav-link" href="/software/">
+              Software
+            </a>
 
-                        <!-- </li>
+            <!-- </li>
           <li class="nav-item ">
             <a class="nav-link" href="/contact/">
               Contact
             </a>
 
           </li> -->
-                </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="d-none d-lg-block pl-auto">
+      <a class="btn btn-light ignore-color-change" href="https://github.com/Rhythm-n-Rodents" role="button"
+        title="Github">
+        <i class="fab fa-github mr-2"></i> Star</a>
+    </div>
+  </nav>
+
+
+  <!-- Content -->
+  <section id="virt" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>vIRt</h2>
+              </div>
             </div>
-        </div>
-        <div class="d-none d-lg-block pl-auto">
-            <a class="btn btn-light ignore-color-change" href="https://github.com/Rhythm-n-Rodents" role="button"
-                title="Github">
-                <i class="fab fa-github mr-2"></i> Star</a>
-        </div>
-    </nav>
-
-
-    <!-- Content -->
-<section id="touchsim" class="fragment content-fragment">
-  <div class="container-fluid bg-light overlay">
-  <div class="container py-5 overlay">
-<div class="row">
-    <article class="col-md-12">
-<div class="title-container row mx-0">
-  <div class="title col px-0 text-left text-body">
-    <h2>TouchSim</h2>
-  </div>
-</div>
-<div class="content-body col-12 content px-0 text-body"><hr>
-<img src="/images/touchsim.png" width="500px" style="float:right; margin:1em;">
-<br />
-<p>TouchSim is a simulation of the responses of every afferent innervating the glabrous skin of the hand. The model is described in detail in a paper entitled: 
-Saal, H.P., Delhaye, B.P., Rayhaun, B.C., and Bensmaia, S.J., 
-<a href="https://www.pnas.org/content/early/2017/06/20/1704856114.full">&ldquo;Simulating tactile signals from the whole hand with millisecond precision&rdquo;</a>
-<em>PNAS</em>, 2017</p>
-<p>If you have any questions, please <a href="https://groups.google.com/forum/#!forum/touchsim">go visit the software forum here</a> where they may have already been addressed. If not, you can post them there.</p>
-<p>There are two versions of the software, one in <a href="https://github.com/BensmaiaLab/touchSim">Matlab</a>, and one in <a href="https://github.com/hsaal/touchsim">Python</a>, for your convenience.</p>
-</div>
-  </article>
-</div>
-  </div>
-  </div>
-</section>
-
-<!-- Content -->
-<section id="touchmime" class="fragment content-fragment">
-  <div class="container-fluid bg-light overlay">
-  <div class="container py-5 overlay">
-<div class="row">
-    <article class="col-md-12">
-<div class="title-container row mx-0">
-  <div class="title col px-0 text-left text-body">
-    <h2>TouchMime</h2>
-  </div>
-</div>
-<div class="content-body col-12 content px-0 text-body"><hr>
-<img src="/images/TouchMime.png" width="500px" style="float:right; margin:1em;">
-<br />
-This software provides a graphical user interface (GUI) to generate a model that computes the firing rate and area of afferent activation from a dynamic stimulus applied to a localized patch of skin. Parameters of the model can be used to create biomimetic stimulation protocols of the residual nerve for providing real-time tactile feedback.
-<p>The approach used in this software is described in detail in the following reference: Okorokova E.V., He Q., Bensmaia S.J., <a href="http://iopscience.iop.org/article/10.1088/1741-2552/aae398/pdf">“Biomimetic encoding model for restoring touch in bionic hands through a nerve interface”</a> <em>Journal of Neural Engineering</em>, 2018</p>
-<p><a href="https://github.com/BensmaiaLab/touchMime">You can access TouchMime here.</a></p>
-</div>
-  </article>
-</div>
-  </div>
-  </div>
-</section>
-
-<!-- Content -->
-<section id="ncams" class="fragment content-fragment">
-  <div class="container-fluid bg-light overlay">
-  <div class="container py-5 overlay">
-<div class="row">
-    <article class="col-md-12">
-<div class="title-container row mx-0">
-  <div class="title col px-0 text-left text-body">
-    <h2>NCams</h2>
-  </div>
-</div>
-<div class="content-body col-12 content px-0 text-body"><hr>
-<img src="/images/NCams.png" width="500px" style="float:right; margin:1em;">
-<br />
-NCams is a toolbox to uses multiple cameras to track and reconstruct the kinematics of primate limbs.
-NCams leverages state-of-the-art machine learning approaches for image tracking,
-<p><a href="http://www.mousemotorlab.org/deeplabcut">DeepLabCut</a> and musculoskeletal modeling
-<a href="https://simtk-confluence.stanford.edu:8443/display/OpenSim/OpenSim+Documentation">OpenSIM</a>
-and includes integration and processing software specifically developed for primate limb tracking.</p>
-<p><a href="https://github.com/CMGreenspon/NCams">You can access NCams here.</a></p>
-</div>
-  </article>
-</div>
-  </div>
-  </div>
-</section>
-
-
-
-
-    <footer class="overlay fragment container-fluid bg-dark" id="copyright">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md">
-                    <div class="row mx-0 my-2 justify-content-center text-center text-lg-none text-white">
-                        <div class="row mx-0 mr-lg-auto justify-content-center">
-                            <div class="col-auto px-1 copyright-legal">© Copyright&nbsp;2023</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="content-body col-12 content px-0 text-body">
+              <hr>
+              <img src="/images/touchsim.png" width="500px" style="float:right; margin:1em;">
+              <br />
+              <p>David Golomb, Jeffrey D. Moore, Arash Fassihi, Jun Takatoh, Vincent Prevosto, Fan Wang and David
+                Kleinfeld, Theory of hierarchically-organized neuronal oscillator dynamics that mediate rodent rhythmic
+                whisking. Neuron, in press, 2022.
+                <a href="#">DOI</a>
+              </p>
+              <p><a href="https://zenodo.org/record/7002550">Data</a></p>
+              <p><a href="https://github.com/Rhythm-n-Rodents/vIRT">Software</a></p>
             </div>
+          </article>
         </div>
-    </footer>
-    <div id="react"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section id="touchmime" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>TouchMime</h2>
+              </div>
+            </div>
+            <div class="content-body col-12 content px-0 text-body">
+              <hr>
+              <img src="/images/TouchMime.png" width="500px" style="float:right; margin:1em;">
+              <br />
+              This software provides a graphical user interface (GUI) to generate a model that computes the firing rate
+              and area of afferent activation from a dynamic stimulus applied to a localized patch of skin. Parameters
+              of the model can be used to create biomimetic stimulation protocols of the residual nerve for providing
+              real-time tactile feedback.
+              <p>The approach used in this software is described in detail in the following reference: Okorokova E.V.,
+                He Q., Bensmaia S.J., <a
+                  href="http://iopscience.iop.org/article/10.1088/1741-2552/aae398/pdf">“Biomimetic encoding model for
+                  restoring touch in bionic hands through a nerve interface”</a> <em>Journal of Neural Engineering</em>,
+                2018</p>
+              <p><a href="https://github.com/BensmaiaLab/touchMime">You can access TouchMime here.</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section id="ncams" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>NCams</h2>
+              </div>
+            </div>
+            <div class="content-body col-12 content px-0 text-body">
+              <hr>
+              <img src="/images/NCams.png" width="500px" style="float:right; margin:1em;">
+              <br />
+              NCams is a toolbox to uses multiple cameras to track and reconstruct the kinematics of primate limbs.
+              NCams leverages state-of-the-art machine learning approaches for image tracking,
+              <p><a href="http://www.mousemotorlab.org/deeplabcut">DeepLabCut</a> and musculoskeletal modeling
+                <a href="https://simtk-confluence.stanford.edu:8443/display/OpenSim/OpenSim+Documentation">OpenSIM</a>
+                and includes integration and processing software specifically developed for primate limb tracking.
+              </p>
+              <p><a href="https://github.com/CMGreenspon/NCams">You can access NCams here.</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-    <script src="vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
+
+  <footer class="overlay fragment container-fluid bg-dark" id="copyright">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-md">
+          <div class="row mx-0 my-2 justify-content-center text-center text-lg-none text-white">
+            <div class="row mx-0 mr-lg-auto justify-content-center">
+              <div class="col-auto px-1 copyright-legal">© Copyright&nbsp;2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="react"></div>
+
+
+  <script src="../vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

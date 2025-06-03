@@ -18,30 +18,29 @@
   <link href="../vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
   <style>
-    .my-download-button {
-  background-color: #4CAF50; /* Green background */
-  color: white;             /* White text */
-  border: none;             /* No border */
-  padding: 12px 24px;       /* Padding around text */
-  text-align: center;       /* Centered text */
-  text-decoration: none;    /* No underline */
-  display: inline-block;    /* Allows setting width/height */
-  font-size: 16px;          /* Font size */
-  border-radius: 8px;       /* Rounded corners */
-  cursor: pointer;         /* Hand cursor on hover */
-  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-}
+        .my-download-button {
+          background-color: #4CAF50; /* Green background */
+          color: white;             /* White text */
+          border: none;             /* No border */
+          padding: 12px 24px;       /* Padding around text */
+          text-align: center;       /* Centered text */
+          text-decoration: none;    /* No underline */
+          display: inline-block;    /* Allows setting width/height */
+          font-size: 16px;          /* Font size */
+          border-radius: 8px;       /* Rounded corners */
+          cursor: pointer;         /* Hand cursor on hover */
+          transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+        }
 
-.my-download-button:hover {
-  background-color: #45a049; /* Slightly darker green on hover */
-  transform: translateY(-2px); /* Subtle lift effect */
-}
+        .my-download-button:hover {
+          background-color: #45a049; /* Slightly darker green on hover */
+          transform: translateY(-2px); /* Subtle lift effect */
+        }
 
-.my-download-button:active {
-  background-color: #3e8e41; /* Even darker green on click */
-  transform: translateY(1px); /* Slight press-down effect */
-}
-
+        .my-download-button:active {
+          background-color: #3e8e41; /* Even darker green on click */
+          transform: translateY(1px); /* Slight press-down effect */
+        }
   </style>
 </head>
 
@@ -64,370 +63,8 @@
             </div>
             <hr>
             <p>
-                Data: <a href="https://zenodo.org/record/7062703" target="_blank"><button class="download-button">Download</button></a>
-              </p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="wisker_bending" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Mechanical Model of Whisker Bending</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/golomb_whisker_bending.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>Samuel Andrew Hires, Lorenz Pammer, Karel Svoboda, and David Golomb, Tapered whiskers are required for
-                active tactile sensation. Elife 2:e01350, 2013.</p>
-              <p>This is an ode script for <a href="https://sites.pitt.edu/~phase/bard/bardware/xpp/xpp.html"
-                  target="_blank">XPPAUT</a> that
-                computes whisker bending in response to contact with object. The calculation is based on the
-                quasi-static approximation, and conic whisker profile is considered.</p>
-              <p><a
-                  href="https://senselab.med.yale.edu/ModelDB/showmodel?model=151677&file=/HiresEtAl2013/conical_whisker.ode#tabs-2"
-                  target="_blank">Software</a></p>
-            </div>
-            <p>Contact: <a href="mailto:golomb@bgu.ac.il">Professor David Golomb</a>&nbsp;<a
-                href="https://www.linkedin.com/in/david-golomb-2a9b547/?originalSubdomain=il"
-                style="text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                </svg></a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="bassler_camera_control" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Bassler_Camera_control, version of 22 Nov 2020</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/bassler.png" style="float:right; margin:1em;">
-              <br />
-              <p>General software for control of Bassler camera to record animal behavior</p>
-              <p>Coded by C. Foo. Matlab-based routines to acquire video (1280x1024 frames) at high frame rates (>200Hz)
-                for hardware-dependent periods; we currently achieve continuous acquisition of 720x720 frames at ~350
-                Hz.</p>
-
-              <p><a href="https://neurophysics.ucsd.edu/lab/Bassler_Camera_Control.zip" target="_blank">Software</a></p>
-            </div>
-            <p>Contact: <a href="mailto:conradfoo@gmail.com">Dr. Conrad Foo</a>&nbsp;<a
-                href="https://www.linkedin.com/in/conrad-foo-692aa139/" style="text-decoration: none;"> <svg
-                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                </svg></a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="analysis_of_neuronal_spike_trains" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Analysis of neuronal spike trains, deconstructed</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/neural_spike.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>Coded by Prof. Johnatan Aljadeff and Dr. Benjamin J. Lansdell.
-
-                Matlab-based routines for capturing relationships between spiking activities and the external stimuli.
-                The algorithm extracts features from the input stimulus and predicts the spike rate using different
-                models (e.g. GLM). The predicted spike rate is then used to generate the spike train by a stochastic
-                process (e.g. Poisson process).
-
-                Three example datasets are included:
-              <p>
-              <ol>
-                <li>(Salamander) Multi-electrode array recording from retinal ganglion cells in response to white noise
-                  visual stimulus (Chichilnisky, 2001; Touryan et al., 2002; Rust et al., 2005; Pillow et al., 2008).
-                </li>
-                <li>(Rat) Single unit recordings of thalamic neurons, with simultaneous vibrissa motion (Moore et al.,
-                  2015).</li>
-                <li>(Monkey) Single unit recordings of motor cortex with simultaneous recording of hand position and
-                  grip
-                  strength during joystick manipulation (Engelhard
-                  et al., 2013).</li>
-              </ol>
-              </p>
-              Please contact Prof. Johnatan Aljadeff for questions on the operation of this software. If you use this
-              software in your research, please reference Aljadeff et al. (Neuron 2016) - (<a
-                href="https://neurophysics.ucsd.edu/publications/ALFK_Neuron_Primer.pdf" target="_blank"><svg
-                  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                  </path>
-                  <path
-                    d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-                  </path>
-                </svg></a>)
-              </p>
-              <p>
-                Further: (1) commercial software from <a href="http://www.mathworks.com" target="_blank">MathWorks</a>
-                is required, including MATLAB, the Image Processing Toolbox, the Optimization Toolbox, the Signal
-                Processing Toolbox, the Statistics Toolbox, and the Symbolic Math Toolbox. (2) download Daniel Hill’s
-                code (<a href="https://neurophysics.ucsd.edu/lab/AnalysisOfNeuronalSpikeTrainsPrimer.zip">code and
-                  datasets</a>) for the Hilbert transform (<a
-                  href="https://neurophysics.ucsd.edu/lab/hilbert_code.zip">code</a>); (3) download Partha
-                Mitra’s Chronux Toolbox (<a href="http://www.chronux.org" target="_blank">http://www.chronux.org</a>);
-                (4) download Jonathan Pillow’s Generalized Linear
-                Model (GLM) implementation for spike trains (<a href="http://pillowlab.princeton.edu/code_GLM.html"
-                  target="_blank">http://pillowlab.princeton.edu/code_GLM.html</a>); (5) download
-                Mark Schmidt’s L1-norm function L1GeneralGroup_Auxiliary.m
-                (<a href="https://www.cs.ubc.ca/~schmidtm/Software/thesis.html"
-                  target="_blank">https://www.cs.ubc.ca/~schmidtm/Software/thesis.html</a>); and (6) download
-                multidimensional histogram
-                function histcn.m download at
-                <a href="http://www.mathworks.com/matlabcentral/fileexchange/23897-ndimensional-histogram/content/histcn.m"
-                  target="_blank">http://www.mathworks.com/matlabcentral/fileexchange/23897-ndimensional-histogram/content/histcn.m</a>.
-                If you use this software in your research, please reference Aljadeff et al. (Neuron 2016)
-              </p>
-              <p><a href="https://neurophysics.ucsd.edu/lab/AnalysisOfNeuronalSpikeTrainsPrimer.zip"
-                  target="_blank">Software and Data</a></p>
-            </div>
-            <a href="https://neurophysics.ucsd.edu/publications/ALFK_Neuron_Primer.pdf" target="_blank"><i
-                class="bi bi-file-pdf"></i></a>
-
-            <p>Contact: <a href="mailto:jaljadeff@ucsd.edu">Professor Johnatan (Yonatan) Aljadeff</a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ultra_mega" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>UltraMegaSort2000, version of Feb 2012</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/ultra_mega.png" width="500px" style="float:right; margin:1em;">
-              <br />
-
-              <p><a href="https://neurophysics.ucsd.edu/lab/ums2k_02_23_2012.zip" target="_blank">Software</a></p>
-              <p><a href="https://neurophysics.ucsd.edu/lab/UltraMegaSort2000%20Manual.pdf" target="_blank">Manual <i
-                    class="fa fa-file-pdf-o" aria-hidden="true"></i></a></p>
-
-
-              <p>Coded by D. N Hill and S. B. Mehta following an initial version coded by M. S. Fee. Matlab-based
-                routines for the detection and clustering of putative single units from a multi-unit time series, along
-                with quality metrics. Please contact <a href="mailto:daniel.n.hill@gmail.com">Dr. Daniel N. Hill</a> for
-                questions on the operation and maintenance
-                of this software after consulting the manual.
-                If you use this software in your research, please reference Hill et al. (J Neurosci 2012) - (<a
-                  href="https://neurophysics.ucsd.edu/publications/8699.full.pdf" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                    </path>
-                    <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-                    </path>
-                  </svg></a>)
-                and Fee et al. (J Neurosci Meth 1997) - (<a
-                  href="https://neurophysics.ucsd.edu/publications/fee_jo_neuro_methods_1996.pdf" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
-                    <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z" />
-                  </svg></a>) & (<a
-                  href="https://neurophysics.ucsd.edu/publications/erratum_fee_jo_neuro_methods_1997.pdf"
-                  target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-file-pdf" viewBox="0 0 16 16">
-                    <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                    </path>
-                    <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-                    </path>
-                  </svg></a>)</p>
-
-            </div>
-            <p>Contact: <a href="mailto:daniel.n.hill@gmail.com">Dr. Daniel Hill</a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="hilbert" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Hilbert transform</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/hilbert.png" style="float:right; margin:1em;">
-              <br />
-              <p><a href="https://neurophysics.ucsd.edu/lab/hilbert_code.zip" target="_blank">Software</a></p>
-
-              <p>Coded by D. N. Hill, this makes use of Matlab-based routines for the extraction of amplitude, midpoint,
-                and phase from a rhythmic signal using Black's technique. Please contact <a
-                  href="mailto:daniel.n.hill@gmail.com">Dr. Daniel N. Hill</a> for
-                questions on the operation of this software.
-                If you use this software in your research, please reference Hill et al. (Neuron 2011) - (<a
-                  href="https://neurophysics.ucsd.edu/publications/hill_motor_cortex.pdf" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                    </path>
-                    <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-                    </path>
-                  </svg></a>)</p>
-
-            </div>
-            <p>Contact: <a href="mailto:daniel.n.hill@gmail.com">Dr. Daniel Hill</a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="int_scanning" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Intelligent_scanning 1.0</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/iscan.png" width="500px" style="float:right; margin:1em;">
-              <br />
-
-              <p><a href="https://neurophysics.ucsd.edu/lab/radon_plus_demo_pd.m" target="_blank">Algorithm and Demo
-                  Code</a></p>
-
-              <p>Coded by I. Valmianski and J. D. Driscoll. Matlab-based routines for the automatic identification of
-                fluorescently labeled brain cells in two-photon scanning microscopy image stacks and the subsequent
-                calculation of an optimized scan path through these cells. This program makes concurrent use of <a
-                  href="http://jboost.sourceforge.net/">JBoost</a>.
-                Please contact <a href="mailto:ivalmian@ucsd.edu">Mr. Ilya Valmiansky</a> for questions on the operation
-                of this software.
-                If you use this software in your research, please reference Valmianski et al. (J Neurophysiol 2010) -
-                (<a href="https://neurophysics.ucsd.edu/publications/Ilya_JNP.pdf" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-                    </path>
-                    <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-                    </path>
-                  </svg></a>)
-              </p>
-            </div>
-            <p>Contact: <a href="mailto:ivalmian@ucsd.edu">Mr. Ilya Valmiansky</a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="brainsharer" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>BrainSharer</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/brainsharer.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>Visualization and annotation tool for brains. Anatomists can view high-resolution tissue stacks and use
-                the drawing tools to annotate and map the 3D topography of brain regions and the localization of
-                injections via labelled cells. A groundbreaking automated system, employing cell shape parametric
-                features and boosted decision trees, and featuring a simplified annotation process, is designed for
-                premotor neuron detection.</p>
-              <p><a href="https://brainsharer.org" target="_blank">brainsharer.org</a> (in progress)</p>
-              <p><a href="docs/mac_shortcut_key_ref.pdf" target="_blank">Mac Key Shortcut Reference</a></p>
-              <p><a href="https://github.com/ActiveBrainAtlas2/neuroglancer" target="_blank">Front End Code
-                  (Neuroglancer fork)</a></p>
-              <p><a href="https://github.com/BrainSharer" target="_blank">Back End Code (API)</a></p>
-              <p><a href="https://github.com/ActiveBrainAtlas2/cell_extractor" target="_blank">ML (feature
-                  detection)</a></p>
-            </div>
-            <p>Contact (all but feature detection): <a href="mailto:drinehart@ucsd.edu">Mr. Duane Rinehart</a></p>
-            <p>Contact (feature detection): <a href="mailto:k1qian@eng.ucsd.edu">Mr. Kui Qian</a></p>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="orofacial" class="fragment content-fragment">
-    <div class="container-fluid bg-light overlay">
-      <div class="container py-5 overlay">
-        <div class="row">
-          <article class="col-md-12">
-            <div class="title-container row mx-0">
-              <div class="title col px-0 text-left text-body">
-                <h2>Orofacial tracking</h2>
-              </div>
-            </div>
-            <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/orofacial.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>Deepfacetracking is a cross-platform package for automated tracking of a single head, eye, pupil, and rows of whiskers in the high-speed video. The package includes preprocessing and a graphical user interface for experimenters to modify and correct the automatic tracking outcomes.</p>
-              <p><a href="https://github.com/Rhythm-n-Rodents/DeepWhiskerCuts" target="_blank">Software</a> (in
-                progress)</p>
-            </div>
-            <p>Contact (scientific): <a href="mailto:arfassihi@gmail.com">Dr. Arash fassihiZakeri</a></p>
-            <p>Contact (software): <a href="mailto:drinehart@ucsd.edu">Mr. Duane Rinehart</a></p>
+              Data: <a href="https://zenodo.org/record/7062703" target="_blank"><button class="download-button">Download</button></a>
+            </p>
           </article>
         </div>
       </div>
@@ -441,42 +78,14 @@
           <article class="col-md-12">
             <div class="title-container row mx-0">
               <div class="title col px-0 text-left text-body">
-                <h2>Rhythmic head and orofacial movements in foraging and rearing</h2>
+                <h2>Rhythmic head and orofacial movements in foraging and rearing</h2><br />
+                &nbsp;<h3>A change in behavioral state switches the pattern of motor output that underlies rhythmic head and orofacial movements</h3>
               </div>
             </div>
             <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/1-s2.0-S0960982223004566-fx1.jpg" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>The package contains codes to analyze and visualize the temporal and spectral coordination of orofacial (whisking, pad retraction, nose wiggling) and neck motor actions with respiration in the rat performing naturalistic behaviors (foraging and rearing) in an open arena.</p>
-              <p>
-                A change in behavioral state switches the pattern of motor output that underlies rhythmic head and orofacial movements. S.-M. Liao and D. Kleinfeld, Current Biology (2023).
-              </p>
-              (<a href="https://neurophysics.ucsd.edu/publications/song_mao_current_biology_head_rhythms_and_state.pdf" target="_blank"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-pdf"
-                    viewBox="0 0 16 16">
-              <path
-                      d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
-              </path>
-              <path
-                      d="M4.603 12.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.701 19.701 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.187-.012.395-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.065.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.716 5.716 0 0 1-.911-.95 11.642 11.642 0 0 0-1.997.406 11.311 11.311 0 0 1-1.021 1.51c-.29.35-.608.655-.926.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.27.27 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.647 12.647 0 0 1 1.01-.193 11.666 11.666 0 0 1-.51-.858 20.741 20.741 0 0 1-.5 1.05zm2.446.45c.15.162.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.881 3.881 0 0 0-.612-.053zM8.078 5.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z">
-              </path>
-            </svg></a>)
-
-
-              <p><a href="https://github.com/Rhythm-n-Rodents/CURBIO_SL_DK" target="_blank">Software</a> </p>
-              <p><a href="https://dandiarchive.org/dandiset/000540?pos=1" target="_blank">NWB Data</a> </p>
-            </div>
-
-            <p>Contact: Dr. Song-Mao Liao&nbsp;<a
-                    href="https://www.linkedin.com/in/smliao/"
-                    style="text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                         fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-              <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg></a></p>
-
-
+            <p>
+              Data: <a href="https://dandiarchive.org/dandiset/000540?pos=1" target="_blank"><button class="download-button">Download</button></a>
+            </p>
           </article>
         </div>
       </div>
@@ -490,25 +99,14 @@
           <article class="col-md-12">
             <div class="title-container row mx-0">
               <div class="title col px-0 text-left text-body">
-                <h2>A brainstem circuit for the expression of defensive facial reactions in rat</h2>
+                <h2>A brainstem circuit for the expression of defensive facial reactions in rat</h2><br />
+                &nbsp;<h3>A brainstem circuit for the expression of defensive facial reactions in rat</h3>
               </div>
             </div>
             <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/D-23-00782_CurBio_Graphical_Abstract.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>Chemoreceptors in the nasal epithelium can trigger an apneic reaction and a grimace in response to airborne irritants. Callado Perez et al. find that the underlying circuit does not involve olfaction. Rather, activation of neurons in the muralis subnucleus of the spinal trigeminal complex will inhibit the Pre-Bötzinger inhalation oscillator.</p>
-
-
-              <p><a href="https://dandiarchive.org/dandiset/000624" target="_blank">Data</a></p>
-
-              <p><a href="https://github.com/Rhythm-n-Rodents/Muralis-defensive-facial-reactions" target="_blank">Software</a> </p>
-            </div>
-
-            <p>Contact (scientific): <a href="mailto:arfassihi@gmail.com">Dr. Arash fassihiZakeri</a></p>
+              <p>
+                Data: <a href="https://dandiarchive.org/dandiset/000624" target="_blank"><button class="download-button">Download</button></a>
               </p>
-
-
           </article>
         </div>
       </div>

@@ -17,65 +17,37 @@
   <link href="../vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
+  <style>
+    .my-download-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;             /* White text */
+  border: none;             /* No border */
+  padding: 12px 24px;       /* Padding around text */
+  text-align: center;       /* Centered text */
+  text-decoration: none;    /* No underline */
+  display: inline-block;    /* Allows setting width/height */
+  font-size: 16px;          /* Font size */
+  border-radius: 8px;       /* Rounded corners */
+  cursor: pointer;         /* Hand cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.my-download-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.my-download-button:active {
+  background-color: #3e8e41; /* Even darker green on click */
+  transform: translateY(1px); /* Slight press-down effect */
+}
+
+  </style>
 </head>
 
 <body class="bg-secondary">
-  <!-- Navigation -->
-  <nav class="overlay fragment navbar navbar-expand-lg py-2 scroll-spy bg-dark navbar-dark" id="nav" role="navigation">
-    <div class="container">
-      <div class="navbar-collapse justify-content-end collapse show" id="navbarCollapse" style="flex-grow: 0;">
-        <ul class="navbar-nav">
-          <li class="nav-item ">
-            <a class="nav-link" href="https://rhythm-n-rodents.github.io/">
-              Home
-            </a>
-          </li>
-          <!--
-          <li class="nav-item ">
-            <a class="nav-link" href="/team/">
-              Team
-            </a>
+  <div id="header"></div>
 
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/publications/">
-              Publications
-            </a>
-
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/news/">
-              Media
-            </a>
-
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/participation/">
-              Participate
-            </a>
-
-          </li> -->
-          <li class="nav-item ">
-            <a class="nav-link" href="/software/">
-              Software
-            </a>
-
-            <!-- </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/contact/">
-              Contact
-            </a>
-
-          </li> -->
-        </ul>
-      </div>
-    </div>
-    <div class="d-none d-lg-block pl-auto" style="padding-right: 15px;">
-      <a class="btn btn-light ignore-color-change" href="https://github.com/Rhythm-n-Rodents" role="button"
-        title="Github">
-        <i class="fab fa-github mr-2"></i> Star</a>
-    </div>
-  </nav>
 
 
   <!-- Content -->
@@ -86,30 +58,14 @@
           <article class="col-md-12">
             <div class="title-container row mx-0">
               <div class="title col px-0 text-left text-body">
-                <h2>Vibrissa Oscillator (vIRt)</h2>
+                <h2>Vibrissa Oscillator (vIRt)</h2><br />
+                &nbsp;<h3>Theory of hierarchically organized neuronal oscillator dynamics that mediate rodent rhythmic whisking</h3><br />
               </div>
             </div>
             <hr>
-            <div class="content-body col-12 content px-0 text-body">
-              <img src="images/virt.png" width="500px" style="float:right; margin:1em;">
-              <br />
-              <p>This model provides a computational framework to support longstanding observations of concurrent autonomous and driven rhythmic motor actions and how the interaction of the Central whisking oscillator Breathing oscillator dynamics can be studied using conductance- and rate-based modeling. The github site includes computer programs and scripts for generating figures from the article:<br />
-                <br />David Golomb, Jeffrey D. Moore, Arash Fassihi, Jun Takatoh, Vincent Prevosto, Fan Wang and David Kleinfeld, Theory of hierarchically-organized neuronal oscillator dynamics that mediate rodent rhythmic whisking.
-                Neuron, (2022) 110:3833-3851.
-                <br />Software needed: julia compiler, XMGrace LaTeX<br /><br />
-                <a href="https://pubmed.ncbi.nlm.nih.gov/36113472/">DOI: 10.1016/j.neuron.2022.08.020</a>
+            <p>
+                Data: <a href="https://zenodo.org/record/7062703" target="_blank"><button class="download-button">Download</button></a>
               </p>
-              <p><a href="https://zenodo.org/record/7062703" target="_blank">Data</a></p>
-              <p><a href="https://zenodo.org/record/7064635" target="_blank">Simulation Programs</a></p>
-              <p><a href="https://github.com/Rhythm-n-Rodents/vIRT" target="_blank">Software</a></p>
-            </div>
-            <p>Contact: <a href="mailto:golomb@bgu.ac.il">Professor David Golomb</a>&nbsp;<a
-                href="https://www.linkedin.com/in/david-golomb-2a9b547/?originalSubdomain=il"
-                style="text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                </svg></a></p>
           </article>
         </div>
       </div>
@@ -559,26 +515,21 @@
     </div>
   </section>
 
-
-  <footer class="overlay fragment container-fluid bg-dark" id="copyright">
-    <div class="container">
-      <div class="row py-3">
-        <div class="col-md">
-          <div class="row mx-0 my-2 justify-content-center text-center text-lg-none text-white">
-            <div class="row mx-0 mr-lg-auto justify-content-center">
-              <div class="col-auto px-1 copyright-legal">© Copyright&nbsp;2023</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
   <div id="react"></div>
-
 
   <script src="../vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google" content="notranslate" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="U19 Data Science Core - data management, processing and analysis tools">
+  <meta name="author" content="Vincent Prevosto @ MIT">
+
+  <title>U19 Data Science Core</title>
+
+  <link href="../vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css" rel="stylesheet">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
+  <link href="../vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-secondary">
+  <div id="header"></div>
+
+  <!-- Intro -->
+  <section id="dsc-intro" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Data Science Core</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body" style="text-align: justify;">
+              <p>
+                The Data Science Core provides complementary, open-source tools to store, manage,
+                process, and share the neurophysiology data generated across the U19 Team. Our strategy
+                is to leverage existing community platforms &mdash; in particular the
+                <a href="https://dandiarchive.org/" target="_blank">DANDI Archive</a> and the
+                <a href="https://www.nwb.org/" target="_blank">NWB</a> standard &mdash; rather than build a
+                separate solution from scratch, and to provide the connective tissue around them.
+              </p>
+              <p>
+                All tools below are listed and documented under a single umbrella repository:
+                <a href="https://github.com/vncntprvst/U19-data-management-and-processing" target="_blank">
+                  <i class="fab fa-github"></i> U19-data-management-and-processing</a>,
+                which links each tool as a submodule. They fall into two groups:
+                <strong>data management</strong> and <strong>data processing &amp; analysis</strong>.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data management -->
+  <section id="data-management" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Data management</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <p style="text-align: justify;">Complementary approaches to organizing, storing, and annotating data.</p>
+              <div class="row row-cols-1 row-cols-md-2 g-4 py-2">
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">Dataset manager</h5>
+                      <p class="card-text">Guided app that takes a project from metadata-template
+                        generation to NWB conversion, validation, and visualization &mdash; producing a
+                        custom conversion script per project.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/vncntprvst/dataset-manager"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">Backup and processing</h5>
+                      <p class="card-text">Acquisition&rarr;NAS backup, metadata consolidation, and
+                        remote-trigger of cluster processing (conversion, data transfer, data repository).</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/vncntprvst/backup_and_processing"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">Forgejo data repository</h5>
+                      <p class="card-text">A lightweight, on-site, versioned store for project
+                        metadata (per-subject and per-session JSON) hosted on the performance-center NAS,
+                        complementing DANDI during ongoing projects.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark"
+                        href="https://github.com/vncntprvst/U19-data-management-and-processing/tree/main/data-management/forgejo-data-repository"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Docs &amp; example</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">BrainSTEM integration</h5>
+                      <p class="card-text">Programmatic sync of notes and metadata with the
+                        <a href="https://www.brainstem.org/" target="_blank">BrainSTEM</a> electronic lab
+                        notebook via its API &mdash; push metadata in, or export records to NWB.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/vncntprvst/brainstem-integration"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data processing and analysis -->
+  <section id="data-processing" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Data processing and analysis</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <p style="text-align: justify;">Pipelines and worked examples for turning raw data into
+                shareable, analyzable products.</p>
+              <div class="row row-cols-1 row-cols-md-2 g-4 py-2">
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">AIND ephys pipeline &harr; NWB / DANDI</h5>
+                      <p class="card-text">Integration of the Allen Institute for Neural Dynamics (AIND)
+                        Kilosort4 spike-sorting pipeline with NWB conversion and DANDI deposition, running
+                        on an HPC cluster (SLURM + Apptainer).</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/vncntprvst/aind-ephys-nwb-dandi"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">Ingestion scripts</h5>
+                      <p class="card-text">Reference library of per-modality, per-language (Python/MATLAB)
+                        conversion examples and guidelines for ephys, 2-photon, widefield, and behavior data.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/Rhythm-n-Rodents/ingestion_scripts"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                      <h5 class="card-title">NWB conversion examples</h5>
+                      <p class="card-text">Complete, published conversion&rarr;deposition walkthroughs tied
+                        to specific Dandisets &mdash; e.g. Peri-head distance PrV
+                        (<a href="https://dandiarchive.org/dandiset/001687/draft" target="_blank">001687</a>).</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                      <a class="btn btn-sm btn-dark" href="https://github.com/vncntprvst/nwb-conversion-examples"
+                        target="_blank"><i class="fab fa-github mr-1"></i> Repository</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datasets on DANDI -->
+  <section id="dsc-datasets" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Datasets on DANDI</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <ul>
+                <li><a href="https://dandiarchive.org/dandiset/001687/draft" target="_blank">001687</a>
+                  &mdash; Peri-head distance PrV <em>(in press; embargoed until publication)</em></li>
+                <li><a href="https://dandiarchive.org/dandiset/001472/draft" target="_blank">001472</a>
+                  &mdash; Separating cognitive and motor processes in the behaving mouse</li>
+                <li><a href="https://dandiarchive.org/dandiset/001604/draft" target="_blank">001604</a>
+                  &mdash; Brainstem circuits generating and coordinating tongue and jaw rhythmic movements</li>
+                <li><a href="https://dandiarchive.org/dandiset/001696/draft" target="_blank">001696</a>
+                  &mdash; Rodent bilateral whisker coordination</li>
+                <li><a href="https://dandiarchive.org/dandiset/001619" target="_blank">001619</a>
+                  &mdash; A brainstem map of orofacial rhythms <em>(collaboration)</em></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <div id="react"></div>
+
+  <script src="../vendor/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    fetch('../header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('../footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+
+</html>

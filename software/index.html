@@ -24,6 +24,16 @@
     .tool-card .card-title { font-size: .95rem; }
     .tool-card .card-text { font-size: .8rem; }
     .tool-card .stretched-link { color: inherit; text-decoration: none; }
+    /* Category colors: muted slate blue, sage green, warm sand */
+    .tool-code   { --cat: #5b7397; --cat-bg: #f3f6fa; }
+    .tool-tools  { --cat: #6b8f71; --cat-bg: #f3f8f4; }
+    .tool-models { --cat: #a8865a; --cat-bg: #faf6f0; }
+    .tool-card { border-left: 4px solid var(--cat); background-color: var(--cat-bg); }
+    .tool-group-title { display: flex; align-items: center; color: #333; }
+    .tool-group-title::before {
+      content: ""; display: inline-block; width: .7rem; height: .7rem;
+      border-radius: 2px; margin-right: .5rem; background-color: var(--cat);
+    }
   </style>
 </head>
 
@@ -44,19 +54,13 @@
             <hr>
             <div class="content-body col-12 content px-0 text-body">
               <p>Models, analysis code and tools from the U19 Team. Click a card to go to its entry.</p>
-              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 py-2">
+
+              <h5 class="tool-group-title tool-code mt-3 mb-1">Code</h5>
+              <p class="small text-muted mb-1">Analysis code and code accompanying publications.</p>
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 pb-2">
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#virt">Vibrissa Oscillator (vIRt)</a></h6>
-                      <p class="card-text text-muted mb-0">Model of the whisking and breathing oscillators</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#whisking_oscillator">The whisking oscillator circuit</a></h6>
                       <p class="card-text text-muted mb-0">Code for Takatoh et al., Nature 2022</p>
@@ -65,34 +69,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#wisker_bending">Whisker bending model</a></h6>
-                      <p class="card-text text-muted mb-0">Mechanics of tapered whiskers on contact</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#basler_camera_control">Basler camera control</a></h6>
-                      <p class="card-text text-muted mb-0">High-frame-rate video acquisition in MATLAB</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#camera_control">CameraControl</a></h6>
-                      <p class="card-text text-muted mb-0">Trigger module and software for vision cameras</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#analysis_of_neuronal_spike_trains">Spike train analysis</a></h6>
                       <p class="card-text text-muted mb-0">Relating spiking to external stimuli (GLM)</p>
@@ -101,16 +78,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#ultra_mega">UltraMegaSort2000</a></h6>
-                      <p class="card-text text-muted mb-0">Spike detection and clustering</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#hilbert">Hilbert transform</a></h6>
                       <p class="card-text text-muted mb-0">Amplitude, midpoint and phase of rhythmic signals</p>
@@ -119,34 +87,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#int_scanning">Intelligent scanning</a></h6>
-                      <p class="card-text text-muted mb-0">Cell detection and scan paths for two-photon imaging</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#brainsharer">BrainSharer</a></h6>
-                      <p class="card-text text-muted mb-0">Viewing and annotating brain tissue stacks</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
-                    <div class="card-body p-2">
-                      <h6 class="card-title mb-1"><a class="stretched-link" href="#orofacial">Orofacial tracking</a></h6>
-                      <p class="card-text text-muted mb-0">Head, eye, pupil and whisker tracking in video</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#behavior_orofacial">Head and orofacial rhythms</a></h6>
                       <p class="card-text text-muted mb-0">Liao and Kleinfeld, Current Biology 2023</p>
@@ -155,7 +96,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#defensive_facial_reactions">Defensive facial reactions</a></h6>
                       <p class="card-text text-muted mb-0">A brainstem circuit in rat</p>
@@ -164,7 +105,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-code h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#cognitive_motor_separation">Cognitive and motor processes</a></h6>
                       <p class="card-text text-muted mb-0">Separating movement-related neural activity</p>
@@ -172,8 +113,68 @@
                   </div>
                 </div>
 
+              </div>
+
+              <h5 class="tool-group-title tool-tools mt-3 mb-1">Tools</h5>
+              <p class="small text-muted mb-1">Applications for acquiring, viewing, tracking and curating data.</p>
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 pb-2">
+
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#basler_camera_control">Basler camera control</a></h6>
+                      <p class="card-text text-muted mb-0">High-frame-rate video acquisition in MATLAB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#camera_control">CameraControl</a></h6>
+                      <p class="card-text text-muted mb-0">Trigger module and software for vision cameras</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#ultra_mega">UltraMegaSort2000</a></h6>
+                      <p class="card-text text-muted mb-0">Spike detection and clustering</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#int_scanning">Intelligent scanning</a></h6>
+                      <p class="card-text text-muted mb-0">Cell detection and scan paths for two-photon imaging</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#brainsharer">BrainSharer</a></h6>
+                      <p class="card-text text-muted mb-0">Viewing and annotating brain tissue stacks</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#orofacial">Orofacial tracking</a></h6>
+                      <p class="card-text text-muted mb-0">Head, eye, pupil and whisker tracking in video</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#neuralyzer">Neuralyzer</a></h6>
                       <p class="card-text text-muted mb-0">Synchronized video, signals and spikes, with no coding</p>
@@ -182,7 +183,7 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#atlastrack">AtlasTrack</a></h6>
                       <p class="card-text text-muted mb-0">Histology-to-atlas registration and probe tracks</p>
@@ -191,10 +192,34 @@
                 </div>
 
                 <div class="col">
-                  <div class="card tool-card h-100 shadow-sm">
+                  <div class="card tool-card tool-tools h-100 shadow-sm">
                     <div class="card-body p-2">
                       <h6 class="card-title mb-1"><a class="stretched-link" href="#spikeviz">SpikeViz</a></h6>
                       <p class="card-text text-muted mb-0">Fast viewer and curation tool for spike sorting</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <h5 class="tool-group-title tool-models mt-3 mb-1">Models</h5>
+              <p class="small text-muted mb-1">Computational models and simulations.</p>
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 pb-2">
+
+                <div class="col">
+                  <div class="card tool-card tool-models h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#virt">Vibrissa Oscillator (vIRt)</a></h6>
+                      <p class="card-text text-muted mb-0">Model of the whisking and breathing oscillators</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card tool-models h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#wisker_bending">Whisker bending model</a></h6>
+                      <p class="card-text text-muted mb-0">Mechanics of tapered whiskers on contact</p>
                     </div>
                   </div>
                 </div>

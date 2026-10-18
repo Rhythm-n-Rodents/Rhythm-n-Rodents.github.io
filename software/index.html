@@ -17,10 +17,195 @@
   <link href="../vendor/fontawesome-free-5.15.4-web/css/fontawesome.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free-5.15.4-web/css/brands.min.css" rel="stylesheet">
   <link href="../vendor/fontawesome-free-5.15.4-web/css/solid.min.css" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .tool-card { transition: transform .15s ease, box-shadow .15s ease; }
+    .tool-card:hover { transform: translateY(-2px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important; }
+    .tool-card .card-title { font-size: .95rem; }
+    .tool-card .card-text { font-size: .8rem; }
+    .tool-card .stretched-link { color: inherit; text-decoration: none; }
+  </style>
 </head>
 
 <body class="bg-secondary">
   <div id="header"></div>
+
+  <!-- Overview: one card per entry, each links to its section below -->
+  <section id="software-overview" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container pt-5 pb-3 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Software</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <p>Models, analysis code and tools from the U19 Team. Click a card to go to its entry.</p>
+              <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 py-2">
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#virt">Vibrissa Oscillator (vIRt)</a></h6>
+                      <p class="card-text text-muted mb-0">Model of the whisking and breathing oscillators</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#whisking_oscillator">The whisking oscillator circuit</a></h6>
+                      <p class="card-text text-muted mb-0">Code for Takatoh et al., Nature 2022</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#wisker_bending">Whisker bending model</a></h6>
+                      <p class="card-text text-muted mb-0">Mechanics of tapered whiskers on contact</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#basler_camera_control">Basler camera control</a></h6>
+                      <p class="card-text text-muted mb-0">High-frame-rate video acquisition in MATLAB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#camera_control">CameraControl</a></h6>
+                      <p class="card-text text-muted mb-0">Trigger module and software for vision cameras</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#analysis_of_neuronal_spike_trains">Spike train analysis</a></h6>
+                      <p class="card-text text-muted mb-0">Relating spiking to external stimuli (GLM)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#ultra_mega">UltraMegaSort2000</a></h6>
+                      <p class="card-text text-muted mb-0">Spike detection and clustering</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#hilbert">Hilbert transform</a></h6>
+                      <p class="card-text text-muted mb-0">Amplitude, midpoint and phase of rhythmic signals</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#int_scanning">Intelligent scanning</a></h6>
+                      <p class="card-text text-muted mb-0">Cell detection and scan paths for two-photon imaging</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#brainsharer">BrainSharer</a></h6>
+                      <p class="card-text text-muted mb-0">Viewing and annotating brain tissue stacks</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#orofacial">Orofacial tracking</a></h6>
+                      <p class="card-text text-muted mb-0">Head, eye, pupil and whisker tracking in video</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#behavior_orofacial">Head and orofacial rhythms</a></h6>
+                      <p class="card-text text-muted mb-0">Liao and Kleinfeld, Current Biology 2023</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#defensive_facial_reactions">Defensive facial reactions</a></h6>
+                      <p class="card-text text-muted mb-0">A brainstem circuit in rat</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#cognitive_motor_separation">Cognitive and motor processes</a></h6>
+                      <p class="card-text text-muted mb-0">Separating movement-related neural activity</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#neuralyzer">Neuralyzer</a></h6>
+                      <p class="card-text text-muted mb-0">Synchronized video, signals and spikes, with no coding</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#atlastrack">AtlasTrack</a></h6>
+                      <p class="card-text text-muted mb-0">Histology-to-atlas registration and probe tracks</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card tool-card h-100 shadow-sm">
+                    <div class="card-body p-2">
+                      <h6 class="card-title mb-1"><a class="stretched-link" href="#spikeviz">SpikeViz</a></h6>
+                      <p class="card-text text-muted mb-0">Fast viewer and curation tool for spike sorting</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- Content -->
@@ -63,7 +248,7 @@
               </div>
             </div>
             <hr> -->
-            <div class="content-body col-12 content px-0 text-body">
+            <div id="whisking_oscillator" class="content-body col-12 content px-0 text-body">
               <img src="images/whisking-oscillator-circuit.png" width="500px" style="float:right; margin:1em;">
               <br />
               <p>This study identifies the neural circuit responsible for rhythmic whisker movements in rodents, pinpointing parvalbumin-expressing inhibitory neurons in the brainstem's vIRt region. These neurons form a recurrent inhibitory network that generates rhythmic activity through network dynamics rather than intrinsic properties. Disrupting this network abolishes regular whisking, highlighting the central role of synaptic inhibition in rhythm generation.<br />
@@ -166,7 +351,7 @@
             </div> -->
 
             <!-- <hr> -->
-            <div class="content-body col-12 content px-0 text-body">
+            <div id="camera_control" class="content-body col-12 content px-0 text-body">
               <!-- <img src="images/basler.png" style="float:right; margin:1em;"> -->
               <br />
               <p>Trigger module and software to control computer vision cameras</p>
@@ -551,7 +736,7 @@
     </div>
   </section>
 
-  <section id="defensive_facial_reactions" class="fragment content-fragment">
+  <section id="cognitive_motor_separation" class="fragment content-fragment">
     <div class="container-fluid bg-light overlay">
       <div class="container py-5 overlay">
         <div class="row">
@@ -575,6 +760,93 @@
 
             <p>Contact: <a href="mailto:munibh@bu.edu">Munib Hasnain</a></p>
 
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="neuralyzer" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>Neuralyzer</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <br />
+              <p>Neuralyzer is a cross-platform toolkit for viewing and analyzing experimental data without writing code.
+                It plays back high-speed video, analog traces and spike data in sync, so users can move from raw data
+                to analysis results in one place. It includes built-in algorithms for tracking, signal processing and
+                behavioral quantification, and supports Python for custom analysis. Data management tools help with
+                importing data, building datasets, creating labels for deep learning, and exporting labeled videos.</p>
+              <p><a href="https://paulmthompson.github.io/WhiskerToolbox/" target="_blank">Documentation</a></p>
+              <p><a href="https://github.com/paulmthompson/WhiskerToolbox" target="_blank">Software</a></p>
+            </div>
+            <p>Contact: Paul Thompson (<a href="https://github.com/paulmthompson/WhiskerToolbox/discussions"
+                target="_blank">GitHub Discussions</a>)</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="atlastrack" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>AtlasTrack</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <br />
+              <p>AtlasTrack is a desktop app for guided registration of histological brain sections to a reference
+                atlas (Allen CCF), with probe trajectory mapping in 3D. It finds sections in slide images, places each
+                section at its atlas level (by hand or automatically with DeepSlice), and fits the atlas to the tissue
+                with elastix, with tools for manual correction. Probe tracks can be traced per shank and channel and
+                refined using LFP depth features. Electrode coordinates can be exported as CSV (CCF µm or Paxinos mm),
+                as an interactive 3D HTML page, or as annotated section images. BrainGlobe atlases are supported.</p>
+              <p>Install with <code>pip install atlastrack</code></p>
+              <p><a href="https://pypi.org/project/atlastrack/" target="_blank">PyPI package</a></p>
+              <p><a href="https://github.com/vncntprvst/AtlasTrack" target="_blank">Software</a></p>
+            </div>
+            <p>Contact: <a href="mailto:prevosto@mit.edu">Dr. Vincent Prevosto</a></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="spikeviz" class="fragment content-fragment">
+    <div class="container-fluid bg-light overlay">
+      <div class="container py-5 overlay">
+        <div class="row">
+          <article class="col-md-12">
+            <div class="title-container row mx-0">
+              <div class="title col px-0 text-left text-body">
+                <h2>SpikeViz</h2>
+              </div>
+            </div>
+            <hr>
+            <div class="content-body col-12 content px-0 text-body">
+              <br />
+              <p>SpikeViz is a fast desktop viewer and curation tool for extracellular spike sorting. It opens
+                SpikeInterface analyzer folders, NWB files, AIND ephys pipeline outputs and older formats such as
+                wave_clus, without needing a Python environment. Large recordings scroll smoothly, and sortings can be
+                opened even without the raw data. It offers trace, probe, event-aligned and dataset views, and saves
+                curation changes in a form that Phy and SpikeInterface can read. Available for Windows and Linux.</p>
+              <p><a href="https://vncntprvst.gitlab.io/spikeviz/" target="_blank">Documentation and downloads</a></p>
+              <p><a href="https://gitlab.com/vncntprvst/spikeviz" target="_blank">Software</a></p>
+            </div>
+            <p>Contact: <a href="mailto:prevosto@mit.edu">Dr. Vincent Prevosto</a></p>
           </article>
         </div>
       </div>
